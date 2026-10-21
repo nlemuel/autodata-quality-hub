@@ -8,7 +8,7 @@ Foi para simular esse desafio que criei o **AutoData Quality**, um projeto pesso
 
 ## Como funciona
 
-O fluxo parte de duas origens: **dados públicos de frota da SENATRAN** como referência de veículos e **dados simulados de fornecedor** para produtos e aplicações. Os dados originais são preservados para permitir auditoria.
+O fluxo parte de duas origens: **dados públicos de frota da SENATRAN da cidade de São José dos Campos** como referência de veículos e **dados simulados de fornecedor** para produtos e aplicações. Os dados originais são preservados para permitir auditoria.
 
 Em seguida, o processo:
 
@@ -34,19 +34,19 @@ O processo foi conferido com um conjunto de testes de erros **inseridos intencio
 
 **Importante:** esses números validam as regras para os cenários simulados. Não representam uma taxa de detecção de 100% em dados reais de fornecedores.
 
-## Ferramentas e aprendizado
+## Ferramentas
 
 - **Excel:** tabelas, fórmulas, conferências e rastreabilidade.
 - **Dados abertos:** referência pública da frota de veículos da SENATRAN.
 - **Data Quality / Master Data:** regras de qualidade, integridade entre cadastros e controle de atualizações.
 
-O principal aprendizado foi que **qualidade de dados não é apenas encontrar erros**: é conseguir explicar cada regra, localizar a origem do problema e tornar a correção verificável.
+**Qualidade de dados não é apenas encontrar erros**: é conseguir explicar cada regra, localizar a origem do problema e tornar a correção verificável.
 
 ## Escopo e próximos passos
 
 Este é um **MVP de estudo**, não um catálogo automotivo comercial. As aplicações e compatibilidades são simuladas e **não devem ser usadas para determinar se uma peça serve em um veículo real**. Os anos observados na frota não representam necessariamente os anos de fabricação de um modelo.
 
-Como evolução, o projeto prevê consolidar um painel de indicadores, concluir a documentação técnica e considerar o uso de Power Query para repetir as transformações com menos etapas manuais.
+Como evolução, o projeto prevê consolidar um painel de indicadores, concluir a documentação técnica e evoluir para o uso de Power Query para repetir as transformações com menos etapas manuais.
 
 ---
 
