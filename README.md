@@ -39,14 +39,31 @@ O processo foi conferido com um conjunto de testes de erros **inseridos intencio
 - **Excel:** tabelas, fórmulas, conferências e rastreabilidade.
 - **Dados abertos:** referência pública da frota de veículos da SENATRAN.
 - **Data Quality / Master Data:** regras de qualidade, integridade entre cadastros e controle de atualizações.
-
+- **Power Query:** consultas para agregar e padronizar a base de veículos, montar o cadastro de produtos e gerar o log de qualidade.
 **Qualidade de dados não é apenas encontrar erros**: é conseguir explicar cada regra, localizar a origem do problema e tornar a correção verificável.
+
+## Dados reais: o que apareceu
+**Fonte:** Registro Nacional de Veículos Automotores (SENATRAN/Ministério dos Transportes), dados abertos, referência jul/2026; licença exibida no portal: Other (Public Domain). Recorte: São José dos Campos/SP, 30.671 linhas (523.100 veículos), das quais os 250 modelos mais frequentes formam o cadastro de veículos (47% da frota do recorte). O arquivo original, de 22,7 milhões de linhas, não está no repositório.
+Problemas encontrados na fonte: campo de ano com o texto "Sem Informação" (543 linhas); registros sem modelo, só com a marca (199 linhas); prefixos de origem antes da marca (I, IMP, JTA, REB, SR); a mesma marca escrita de três formas (GM, CHEV, CHEVROLET); quantidades gravadas com ponto decimal, que o Excel em português lê como 10 vezes o valor.
 
 ## Escopo e próximos passos
 
-Este é um **MVP de estudo**, não um catálogo automotivo comercial. As aplicações e compatibilidades são simuladas e **não devem ser usadas para determinar se uma peça serve em um veículo real**. Os anos observados na frota não representam necessariamente os anos de fabricação de um modelo.
+Este é um **MVP de estudo**, não um catálogo automotivo comercial. As aplicações e compatibilidades são simuladas e **não devem ser usadas para determinar se uma peça serve em um veículo real**. A faixa de anos de cada modelo foi derivada dos anos de fabricação observados na frota do recorte. Não é o período oficial de produção do modelo. Os nomes das marcas de peças são fictícios e não têm relação com empresas ou produtos reais.
 
-Como evolução, o projeto prevê consolidar um painel de indicadores, concluir a documentação técnica e evoluir para o uso de Power Query para repetir as transformações com menos etapas manuais.
+Como evolução, o projeto prevê consolidar um painel de indicadores e concluir a documentação técnica.
+
+## Fonte de Dados
+
+Os dados utilizados neste projeto são provenientes do portal oficial de dados abertos do Ministério dos Transportes.
+
+    RENAVAM — Registro Nacional de Veículos Automotores: 
+    
+[Acessar dataset do RENAVAM](https://dados.transportes.gov.br/dataset/registro-nacional-de-veiculos-automotores-renavam)
+
+Acesse o link para consultar e obter os dados originais utilizados nas análises de qualidade de dados.
+dados. 
+
+Data do download: 03/10/2026
 
 ---
 
